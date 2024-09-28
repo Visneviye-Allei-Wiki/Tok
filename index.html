@@ -1,23 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ток</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Тарелка - Вишневые Аллеи Вики</title>
     <link rel="icon" href="images/icon.png" type="image/png" sizes="512x512">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <a href="https://visneviye-allei-wiki.github.io/Wiki/">
-                <img src="images/bannerwiki.png" alt="Добро пожаловать на Вишневые Аллеи Вики" class="banner">
-            </a>
-            <p>Добро пожаловать на Вишневые Аллеи Вики!</p>
+<body class="light-theme">
+    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+    <div class="sidebar" id="sidebar">
+        <nav class="navigation">
+            <a href="https://visneviye-allei-wiki.github.io/Pages/">Все Статьи Вики</a>
+            <a href="#">Категории</a>
+            <a href="https://discord.gg/sAkkMxgh7f">Вики Сообщества</a>
+            <a href="https://visneviye-allei-wiki.github.io/sozdateli/">Создатели/Редакторы Вики</a>
+        </nav>
+        <div class="theme-switch">
+            <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider"></span>
+            </label>
+            <span>Темная тема</span>
         </div>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <div class="header">
+                <a href="https://visneviye-allei-wiki.github.io/Wiki/">
+                    <img src="images/bannerwiki.png" alt="Добро пожаловать на Вишневые Аллеи Вики" class="banner">
+                </a>
+            </div>
+            
+            <div class="divider"></div>
         
-        <div class="main-content">
-            <div class="content">
+            <div class="content-wrapper">
+                <main class="main-info">
                 <h2>Основная информация</h2>
                 <p>Ток (tok_69) - участник <a href="https://discord.gg/dRu68ERWFx">Discord-сервера Вишневых Аллей</a>, зашел на сервер 10 августа 2022 года, увидев в рекомендациях творчество <a href="https://www.youtube.com/@cherru_">Черр</a>, а именно такие видео, как "<a href="https://youtu.be/88BYU18NSYQ?si=7CP50hDSjklWnrH4">Аскорбинка | animation (ft.Lololoshka, Кавински) Идеальный мир</a>" и "<a href="https://youtu.be/hpwbFvcqIjo?si=9lcM9lesrm_FBf8U">45 секунд шуток про руку (Идеальный мир) ft.Кейт, Радан, Райя</a>". В дальнейшем, начал следить за творчеством <a href="https://www.youtube.com/@cherru_">Черр</a>.</p>
                 
@@ -38,7 +56,7 @@
                     <li>Ник в бравле: про</li>
                 </ul>
             </div>
-            <div class="infobox">
+                <aside class="infobox">
                 <h2>Ток</h2>
                 <img src="images/Tok.png" alt="Tok" class="avatar">
                 <table>
@@ -66,5 +84,6 @@
             </div>
         </div>
     </div>
+ <script src="script.js"></script>
 </body>
 </html>
